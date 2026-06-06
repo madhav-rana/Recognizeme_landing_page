@@ -1,0 +1,164 @@
+{% extends "layout.html" %}
+
+{% block title %}About | RecognizeMe{% endblock %}
+
+{% block content %}
+
+<!-- Hero -->
+<div class="bg-body-tertiary py-5 border-bottom">
+  <div class="container text-center py-4">
+    <span class="badge bg-info bg-opacity-10 text-info border border-info border-opacity-25 rounded-pill px-3 py-2 mb-3 me">
+      🤖 Our Story
+    </span>
+    <h1 class="fw-bold display-5 mb-3">About <span class="text-info me">RecognizeMe</span></h1>
+    <p class="text-secondary mx-auto" style="max-width: 550px;">
+      We are a team of passionate developers building the future of classroom attendance
+      using cutting-edge AI, facial recognition, and voice biometrics.
+    </p>
+  </div>
+</div>
+
+<!-- Mission -->
+<div class="container py-5">
+  <div class="row align-items-center mb-5 pb-5 border-bottom">
+    <div class="col-lg-6">
+      <p class="text-info fw-semibold mb-1 me">— Our Mission —</p>
+      <h2 class="fw-bold mb-3">Making attendance effortless for every educator</h2>
+      <p class="text-secondary">
+        Traditional attendance is slow, error-prone, and a waste of precious class time.
+        RecognizeMe was built to eliminate that friction — giving teachers back their time
+        and students a seamless, modern experience.
+      </p>
+      <p class="text-secondary">
+        We believe technology should work <strong>for</strong> educators, not against them.
+        That's why our system is fast, accurate, and requires zero technical expertise to use.
+      </p>
+    </div>
+    <div class="col-lg-5 offset-lg-1 mt-4 mt-lg-0">
+      <div class="bg-info bg-opacity-10 border border-info border-opacity-25 rounded-4 p-5 text-center">
+        <div style="font-size: 5rem;">🎯</div>
+        <h4 class="fw-bold mt-3">Our Goal</h4>
+        <p class="text-secondary mb-0">Save 10 minutes per class. Give educators 10 minutes of their life back — every single day.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Stats -->
+  <div class="row text-center mb-5 pb-5 border-bottom">
+    <h2 class="fw-bold mb-5">By the Numbers</h2>
+    <div class="col-md-3 col-6 mb-4">
+      <h2 class="fw-bold text-info me">99%</h2>
+      <p class="text-secondary small">Face Recognition Accuracy</p>
+    </div>
+    <div class="col-md-3 col-6 mb-4">
+      <h2 class="fw-bold text-info me">2s</h2>
+      <p class="text-secondary small">Average Scan Time</p>
+    </div>
+    <div class="col-md-3 col-6 mb-4">
+      <h2 class="fw-bold text-info me">500+</h2>
+      <p class="text-secondary small">Educators Using RecognizeMe</p>
+    </div>
+    <div class="col-md-3 col-6 mb-4">
+      <h2 class="fw-bold text-info me">50k+</h2>
+      <p class="text-secondary small">Attendance Records Logged</p>
+    </div>
+  </div>
+
+  <!-- Team -->
+  <div class="mb-5 pb-5 border-bottom">
+    <p class="text-center text-secondary mb-1">— The People —</p>
+    <h2 class="fw-bold text-center mb-5">Meet the Team</h2>
+
+    <div class="row justify-content-center">
+        <div class="col-md-5">
+            <div class="card border-0 shadow-sm rounded-4 p-5 text-center">
+
+                <!-- Your Photo -->
+                <img src="{{ url_for('static', filename='images/madhav.jpg') }}"
+                    alt="Your Name"
+                    class="rounded-circle mx-auto mb-3"
+                    style="width: 120px; height: 120px; object-fit: cover; object-position: top; border: 4px solid #5865F2;"
+                >
+
+                <h4 class="fw-bold mb-1">Madhav Singh Rana</h4>
+                <p class="text-info small mb-3 me">Founder & Solo Developer</p>
+                <p class="text-secondary mb-4">
+                    Designed, built, and deployed everything — from AI face recognition and
+                    voice embeddings to the full stack web app. Every line of code, every model,
+                    every pixel. All solo.
+                </p>
+                <div class="d-flex flex-wrap gap-2 justify-content-center">
+                    <span class="badge bg-info bg-opacity-10 text-info border border-info border-opacity-25 rounded-pill px-3 py-2 me">🤖 AI & ML</span>
+                    <span class="badge bg-info bg-opacity-10 text-info border border-info border-opacity-25 rounded-pill px-3 py-2 me">⚡ Full Stack</span>
+                    <span class="badge bg-info bg-opacity-10 text-info border border-info border-opacity-25 rounded-pill px-3 py-2 me">🎨 UI/UX</span>
+                    <span class="badge bg-info bg-opacity-10 text-info border border-info border-opacity-25 rounded-pill px-3 py-2 me">☁️ DevOps</span>
+                </div>
+
+            </div>
+        </div>
+        </div>
+  </div>
+
+  <!-- Tech Stack -->
+  <div class="mb-5">
+    <p class="text-center text-secondary mb-1">— Under the Hood —</p>
+    <h2 class="fw-bold text-center mb-5">Built With</h2>
+    <div class="row g-3 justify-content-center text-center">
+      <div class="col-md-2 col-4">
+        <div class="card border-0 bg-body-tertiary rounded-4 p-3 h-100">
+          <div class="fs-2 mb-2">🐍</div>
+          <small class="fw-semibold">Python</small>
+        </div>
+      </div>
+      <div class="col-md-2 col-4">
+        <div class="card border-0 bg-body-tertiary rounded-4 p-3 h-100">
+          <div class="fs-2 mb-2">⚡</div>
+          <small class="fw-semibold">Flask</small>
+        </div>
+      </div>
+      <div class="col-md-2 col-4">
+        <div class="card border-0 bg-body-tertiary rounded-4 p-3 h-100">
+          <div class="fs-2 mb-2">🎈</div>
+          <small class="fw-semibold">Streamlit</small>
+        </div>
+      </div>
+      <div class="col-md-2 col-4">
+        <div class="card border-0 bg-body-tertiary rounded-4 p-3 h-100">
+          <div class="fs-2 mb-2">👁️</div>
+          <small class="fw-semibold">FaceRecognition</small>
+        </div>
+      </div>
+      <div class="col-md-2 col-4">
+        <div class="card border-0 bg-body-tertiary rounded-4 p-3 h-100">
+          <div class="fs-2 mb-2">🎙️</div>
+          <small class="fw-semibold">Resemblyzer</small>
+        </div>
+      </div>
+      <div class="col-md-2 col-4">
+        <div class="card border-0 bg-body-tertiary rounded-4 p-3 h-100">
+          <div class="fs-2 mb-2">☁️</div>
+          <small class="fw-semibold">Supabase</small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- CTA -->
+<div class="container mb-5">
+  <div class="bg-info bg-opacity-10 border border-info border-opacity-25 rounded-4 p-5 text-center">
+    <h2 class="fw-bold mb-3">Ready to try RecognizeMe?</h2>
+    <p class="text-secondary mb-4">Join hundreds of educators already saving time every day.</p>
+    <!-- <a href="https://recognizeme.streamlit.app/" class="btn btn-info text-white px-4 py-2 fw-semibold rounded-pill">
+      🚀 Start AI Attendance
+    </a> -->
+    <a href="https://recognizeme.streamlit.app/"
+        class="btn btn-primary rounded-pill px-4"
+        style="background-color:#5865F2;">
+        🚀 Start AI Attendance
+    </a>
+  </div>
+</div>
+
+{% endblock %}

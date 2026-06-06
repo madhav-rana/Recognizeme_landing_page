@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+
+{% block title %}Features | RecognizeMe{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+
+  <p class="text-center text-secondary mb-1">— What We Offer —</p>
+  <h2 class="fw-bold text-center mb-5" style="font-size: 3rem;">Features</h2>
+
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="card border-0 shadow-sm rounded-4 p-4 h-100 text-center">
+        <div class="fs-1 mb-3">📸</div>
+        <h5 class="fw-bold">AI Face Analysis</h5>
+        <p class="text-secondary">Recognize every student from a single class photo instantly.</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card border-0 shadow-sm rounded-4 p-4 h-100 text-center">
+        <div class="fs-1 mb-3">🎙️</div>
+        <h5 class="fw-bold">Voice ID</h5>
+        <p class="text-secondary">Students say "Present" and our AI matches their voice in real-time.</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card border-0 shadow-sm rounded-4 p-4 h-100 text-center">
+        <div class="fs-1 mb-3">📱</div>
+        <h5 class="fw-bold">QR Enrollment</h5>
+        <p class="text-secondary">Instant student enrollment via unique QR codes. No manual entry.</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card border-0 shadow-sm rounded-4 p-4 h-100 text-center">
+        <div class="fs-1 mb-3">📊</div>
+        <h5 class="fw-bold">Analytics Dashboard</h5>
+        <p class="text-secondary">Track attendance trends and download CSV reports with one click.</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card border-0 shadow-sm rounded-4 p-4 h-100 text-center">
+        <div class="fs-1 mb-3">☁️</div>
+        <h5 class="fw-bold">Cloud Sync</h5>
+        <p class="text-secondary">All data synced in real-time via Supabase PostgreSQL infrastructure.</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card border-0 shadow-sm rounded-4 p-4 h-100 text-center">
+        <div class="fs-1 mb-3">🔒</div>
+        <h5 class="fw-bold">Secure Auth</h5>
+        <p class="text-secondary">High-security login with encrypted biometric data storage.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+{% endblock %}

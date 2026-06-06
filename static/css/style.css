@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap');
+
+/* Layout */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  background-color: #f0f4ff;
+}
+
+#content {
+  flex: 1;
+}
+
+/* Navbar */
+.navbar {
+  background-color: black !important;
+}
+.nav-link {
+  color: white !important;
+}
+
+/* Hero */
+.hero {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 120px 40px;
+  background-color: #f0f4ff;
+}
+
+/* Features hover */
+#features .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+#features .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 188, 212, 0.15) !important;
+}
+
+/* Tech Stack hover */
+#tech .rounded-4 {
+  transition: transform 0.3s ease, background 0.3s ease;
+  cursor: pointer;
+}
+#tech .col-md-3 .rounded-4:hover {
+  transform: translateY(-8px);
+  background: rgba(255, 255, 255, 0.2) !important;
+}
+
+/* Utility */
+.me {
+  color: #5865F2 !important;
+}
+.start-ai-button{
+    background-color: #5865F2;
+}
